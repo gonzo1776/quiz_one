@@ -1,5 +1,5 @@
 class QuizOneController < ApplicationController
     def index
-        @question = question.first
+       @question = Question.order("RANDOM()").first
     end
 end

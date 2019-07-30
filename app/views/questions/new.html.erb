@@ -1,0 +1,8 @@
+<h1> Ask your question</h1>
+
+<%= simple_form_for @question do |f| %>
+    <%= f.input :question %>
+    <%= f.input :author %>
+    <br/>
+    <%= f.submit 'Submit your question', class: 'btn btn-danger' %>
+<% end %>
