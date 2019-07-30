@@ -1,22 +1,24 @@
 class QuestionsController < ApplicationController
-   #
+#     def index
+#         @question = Question.order("RANDOM()").first
+#     end
 
     def new
-        @question = Question.new
+         @question = Question.new
     end
 
-    def update
+#     def update
             
-    end
+#     end
 
-    def create
+     def create
         Question.create(question_params)
-        redirect_to root_path
+         redirect_to root_path
     end
 
-    private
+#     private
 
-    def question_params
-        params.require(:question).permit(:question, :author)
-    end
-end
+     def question_params
+         params.require(:question).permit(:question, :author)
+     end
+ end
