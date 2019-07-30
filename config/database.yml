@@ -77,7 +77,7 @@ development:
 # You can use this database configuration with:
 #
 production:
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['quiz_one_production_URL'] %>
 
 production:
   <<: *default
